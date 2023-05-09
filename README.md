@@ -58,7 +58,9 @@ set PATH=%CMAKE_ROOT%;%PATH%
 - [x] Additional Libraries
 - [x] Qt Debug Information Files
 - [x] Qt Quick Timeline
+
 Спускаемся ниже где расположен Developer and Designer Tools, раскрываем пункт:
+
 - [x] Qt Creator X.X.X
 - [x] Qt Creator X.X.X CDB Debugger Support
 - [x] Debugging Tools for Windows
@@ -110,9 +112,9 @@ set PATH=%CMAKE_ROOT%;%PATH%
    - `static`, `static-runtime` - включить статическую компоновку Qt и runtime
    - `prefix <prefix>` - путь до папки, в которую будут скопированы откомпилированные файлы Qt
 6.1 Ждём окончания процесса! После этого вконце будет написан результат, без ошибок он выглядит так:
-`Qt is now configured for building. Just run 'cmake --build . --parallel'
+Qt is now configured for building. Just run 'cmake --build . --parallel'
 
-Once everything is built, you must run 'ninja install'
+``"Once everything is built, you must run 'ninja install'
 Qt will be installed into 'D:/QT/6.2.0/MSCV-Static'
 
 To configure and build other Qt modules, you can use the following convenience script:
@@ -128,7 +130,8 @@ CMake Warning:
     BUILD_qtscript
 
 
--- Build files have been written to: D:/QT/6.2.0/build`
+-- Build files have been written to: D:/QT/6.2.0/build"``
+
 6.2 Воспользуйтесь переводчиком если что либо из написаного выше не понятно!
 7. QT настроен для сборки, запускаем команду 
 ```shell script
