@@ -90,13 +90,13 @@ set PATH=%CMAKE_ROOT%;%PATH%
 6. Запускаем конфигурационный скрипт
 
    ```shell script
-   <Путь до исходников Qt>\configure.bat -debug-and-release -static -static-runtime -opensource -confirm-license -platform win32-msvc -qt-zlib -qt-libpng -qt-libjpeg -nomake examples -nomake tests -no-opengl -skip qtscript -prefix "<Путь куда будет собираться статическая версия>"
+   <Путь до исходников Qt>\configure.bat -debug-and-release -static -static-runtime -opensource -confirm-license -platform win32-msvc -qt-zlib -qt-libpng -qt-libjpeg -nomake examples -nomake tests -no-opengl -skip qtscript -skip qtquick3d -prefix "<Путь куда будет собираться статическая версия>"
    ```
    - `<Путь до исходников Qt>` - как правило находится в папке с установленным QT, в моём случае: D:\QT\6.2.0\Src
    - `<Путь куда будет собираться статическая версия>` - в моём случае это папка с установленным Qt D:\QT\6.2.0\MSCV-Static
    # "<" и ">" не вписываем, должно получится вот так(это пример):
    ```shell script
-   D:\QT\6.2.0\Src\configure.bat -debug-and-release -static -static-runtime -opensource -confirm-license -platform win32-msvc -qt-zlib -qt-libpng -qt-libjpeg -nomake examples -nomake tests -no-opengl -skip qtscript -prefix "D:\QT\6.2.0\MSCV-Static"
+   D:\QT\6.2.0\Src\configure.bat -debug-and-release -static -static-runtime -opensource -confirm-license -platform win32-msvc -qt-zlib -qt-libpng -qt-libjpeg -nomake examples -nomake tests -no-opengl -skip qtscript -skip qtquick3d -prefix "D:\QT\6.2.0\MSCV-Static"
    ```
 
    Ключи:
@@ -143,3 +143,7 @@ CMake Warning:
    ninja install
    ```
 8.1 После окончания сборки, можем перейти в QT для настройки профиля и комплекта!
+8.2 Вывод консоли должен быть такой:
+```
+[11790/11790] Linking CXX static library qtbase\qml\QtWebView\qtwebviewquickplugind.lib
+```
