@@ -114,6 +114,7 @@ set PATH=%CMAKE_ROOT%;%PATH%
 6.1 Ждём окончания процесса! После этого вконце будет написан результат, без ошибок он выглядит так:
 Qt is now configured for building. Just run 'cmake --build . --parallel'
 
+ТУТ НАЧАЛО
 ``"Once everything is built, you must run 'ninja install'
 Qt will be installed into 'D:/QT/6.2.0/MSCV-Static'
 
@@ -131,6 +132,8 @@ CMake Warning:
 
 
 -- Build files have been written to: D:/QT/6.2.0/build"``
+ТУТ КОНЕЦ
+
 
 6.2 Воспользуйтесь переводчиком если что либо из написаного выше не понятно!
 7. QT настроен для сборки, запускаем команду 
@@ -143,6 +146,7 @@ CMake Warning:
    ninja install
    ```
 8.1 После окончания сборки, можем перейти в QT для настройки профиля и комплекта!
+
 8.2 Вывод консоли должен быть такой:
 ```
 [11790/11790] Linking CXX static library qtbase\qml\QtWebView\qtwebviewquickplugind.lib
