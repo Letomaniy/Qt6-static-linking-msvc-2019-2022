@@ -140,14 +140,12 @@ CMake Warning:
 ```shell script
    cmake --build . --parallel
    ```
-7.1 Ждём окончания настроки(может занять много времени, зависит от ЦП и скорости записи)
+7.1 Ждём окончания настроки(может занять много времени, зависит от ЦП и скорости записи), вывод консоли должен быть такой:
+```
+[11790/11790] Linking CXX static library qtbase\qml\QtWebView\qtwebviewquickplugind.lib
+```
 8. После окончания 7.1 запускаем команду 
 ```shell script
    ninja install
    ```
 8.1 После окончания сборки, можем перейти в QT для настройки профиля и комплекта!
-
-8.2 Вывод консоли должен быть такой:
-```
-[11790/11790] Linking CXX static library qtbase\qml\QtWebView\qtwebviewquickplugind.lib
-```
